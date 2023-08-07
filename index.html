@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/css/estilos.css" />
+  </head>
+  <body>
+    <h1>Conversor de Divisas</h1>
+    <div class="contenedor">
+      <form id="conversor" class="box">
+        <h2>Pesos Chilenos</h2>
+        <input type="text" name="valor" />
+        <p>Divisa a Convertir</p>
+        <select name="divisa">
+          <option value="" >Elija la Divisa</option>
+          <option value="dolar">Dolar</option>
+          <option value="euro">Euro</option>
+        </select>
+        <button id="boton" class="buscar">Convertir</button>
+        <div class="cambio">
+          <h3 id="total_valor"></h3>
+        </div>
+      </form>
+    </div>
+
+    <div class="grafico">
+      <canvas id="myChart"></canvas>
+    </div>
+
+    <script src="assets/js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+  </body>
+</html>
